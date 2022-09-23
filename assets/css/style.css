@@ -3,21 +3,39 @@
     box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-image: linear-gradient(
+      rgba(187, 212, 224, 0.986) 50%,
+      rgb(147, 174, 185) 100%);
+}
+
+main{
+  max-width: 1600px;
+  margin:auto;
+}
+
 header{
     display: flex;
     align-items: center;
     color: white;
-    background-color:rgb(5, 61, 87);
+    background-image: linear-gradient(
+      rgb(5, 61, 87, 0.6) 0%,
+      rgb(5, 61, 87, 1) 100%
+    );
 }
 
 header h1{
-    font-size: 45px;
+    font-size: 5rem;
     margin-left: 10px;
     background-color:rgb(36, 84, 100);
 }
 
 header nav{
-    font-size: 22px;
+    font-size: 3rem;
     margin-left: auto;
     margin-right: 20px;
 }
@@ -26,6 +44,7 @@ header nav ul{
     display: inline-flex;
     flex-wrap: wrap;
     list-style-type: none;
+
 }
 
 header nav ul li{
@@ -35,7 +54,7 @@ header nav ul li{
     border-color: rgb(234, 236, 243);
 }
 
-a{
+header a{
     color: rgb(224, 224, 233);
     text-decoration:none;
     font-weight: bold;
@@ -52,22 +71,253 @@ a{
     align-items:center;
   }
 
-  .Photo img{
+.Photo img{
     height: 300px;
+    margin-left:10%;
   }
 
-  .Photo h2{
+.Photo h2{
     color: white;
-    font-size: 40px;
+    font-size: 4rem;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 100px;
     margin-top: 200px;
     background-color: rgb(9, 23, 148);
   }
 
-@media screen and (max-width: 768px) {
+.About-me-section{
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 150px;
+}  
+
+.About-me-section h2{
+  flex: 0 0 300px;
+  font-size: 4rem;
+  font-family: "Trebuchet MS", "Arial";
+  font-style: italic;
+  border-style:double;
+  border-width:0 10px 0 0;
+  border-color: black;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.About-me-section p{
+  font-size: 2.5rem;
+  text-align: justify;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  padding-left: 10px;
+}
+
+.Work-section{
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.Work-section h2{
+  margin-top:0px;
+  margin-bottom: 0px;
+  flex: 0 0 300px;
+  font-size: 4rem;
+  font-family: "Trebuchet MS", "Arial", sans-serif;
+  font-style: italic;
+  border-style:double;
+  border-width:0 10px 0 0;
+  border-color: black;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.Applications{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.Applications a{
+  margin:10px;
+  flex-grow: 1;
+  border-style: solid;
+  border-color: rgb(11, 109, 221);
+  border-width: 8px;
+  opacity: 0.5;
+  transition: width 500ms;
+}
+
+.Applications a:hover{
+  opacity:1;
+}
+
+.Applications h3{
+  font-size:2.5rem;
+  color: white;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.Applications p{
+  margin-top: 3px;
+  margin-left: 5px;
+  font-size:1.8rem;
+  color:white;
+}
+
+.Principal section{
+  position:relative;
+  top:230px;
+  left: 0px;
+  background-color:rgb(29, 160, 160);
+  margin-right: 60%;
+}
+
+.Secondary section{
+  position:relative;
+  top:50%;
+  left: 0px;
+  background-color:rgb(29, 160, 160);
+  margin-right: 40%;
+}
+
+.Principal{
+  width:100%;
+  height: 400px;
+  background: url("../images/Application1.jpeg");
+  background-size: cover;
+}
+
+.Applications a{
+  text-decoration:none;
+}
+
+.Application2{
+  background: url("../images/Application2.jpg");
+  background-size:cover;
+}
+
+.Application3{
+  background: url("../images/Application3.jpg");
+  background-size:cover;
+}
+
+.Application4{
+  background: url("../images/Application4.jpeg");
+  background-size:cover;
+}
+
+.Application5{
+  background: url("../images/Application5.jpg");
+  background-size:cover;
+}
+
+.Applications article{
+  height: 200px;
+}
+
+.Secondary{
+  min-width:300px;
+  max-width:450px;
+  height:200px;
+}
+
+.Contact-me-section{
+  display: flex;
+  align-items:center;
+  margin-right: 150px;
+}
+
+.Contact-me-section h2{
+  flex: 0 0 300px;
+  font-size: 4rem;
+  font-family: "Trebuchet MS", "Arial";
+  font-style: italic;
+  border-style:double;
+  border-width:0 10px 0 0;
+  border-color: black;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.Contact-me-section nav{
+  flex-basis:auto;
+}
+
+.Contact-me-section nav ul{
+  display: inline-flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  list-style-type: none;
+}
+
+.Contact-me-section a{
+  color: black;
+  font-size: 25px;
+  text-decoration: underline;
+  text-shadow:rgb(11, 109, 221);
+  font-weight: bold;
+  text-align:center;
+  font-family: "Bradley hand", cursive;
+}
+
+.Contact-me-section nav ul li{
+  margin-left: 30px;
+  flex-grow:1;
+}
+
+.Cel::before{
+  content: "📱";
+  display:inline-block;
+  text-decoration: none;
+}
+
+.Mail::before{
+  content: "📧";
+  display:inline-block;
+  text-decoration: none;
+}
+
+.Github::before{
+  content: "💻";
+  display:inline-block;
+  text-decoration: none;
+}
+
+.Linkedin::before{
+  content: "💼";
+  display:inline-block;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1473px){
+    .Application2, .Application3, .Application4, .Application5{
+      min-width:300px;
+      max-width:347.33px;
+    }
+  }
+
+@media screen and (max-width:1105px){
+    .Applications{
+      justify-content: center;
+    }
+
+    .Principal section{
+      margin-right: 50%;
+    }
+  }
+  
+@media screen and (max-width: 900px) {
+    header h1{
+      text-align:center;
+    }
     header, header nav ul {
       flex-direction: column;
+    }
+
+    header nav ul{
+      text-align:center;
     }
     header nav {
         margin: auto;
@@ -80,6 +330,87 @@ a{
     .Photo h2{
         margin: auto;
     }
-  }
 
- 
+    .Work-section{
+      margin: auto;
+    }
+
+    .Work-section h2, .About-me-section h2, .Contact-me-section h2{
+      border-style:none;
+      border-width:0px;
+      padding-right: 0px;
+      flex-basis: 50px;
+      margin-bottom:0px;
+    }
+
+    .Applications, .Work-section, .About-me-section, .Contact-me-section {
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+    }
+
+    .About-me-section{
+      margin-right: 100px;
+      margin-left:100px;
+    }
+
+    .About-me-section p{
+      margin-top:0px;
+      padding-top: 10px;
+      border-style:double;
+      border-width:10px 0 0 0;
+      border-color: black;
+    }
+   
+    .Applications{
+      border-style:double;
+      border-width:10px 0 0 0;
+      border-color: black;
+    }
+
+    .Applications section{
+      margin-right: 40%;
+    }
+
+    .Principal {
+      width: 400px;
+      height: 300px;
+    }
+
+    .Principal section{
+      top: 150px;
+    }
+
+    .Secondary section{
+      top:20%;
+    }
+
+    .Application2, .Application3, .Application4, .Application5{
+      width: 400px;
+      height: 150px;
+    }
+
+    .Contact-me-section{
+      margin-right: 100px;
+      margin-left:100px;
+    }
+
+    .Contact-me-section nav{
+      margin-top:0px;
+      padding-top: 10px;
+      border-style:double;
+      border-width:10px 0 0 0;
+      border-color: black;
+    }
+
+    .Contact-me-section nav ul{
+      flex-direction: column;
+      padding-left:0px;
+    }
+
+    .Contact-me-section nav ul li{
+      margin-left: 0px;
+    }
+}
+
+
