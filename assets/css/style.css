@@ -1,23 +1,23 @@
-
+/*Properties for all elements*/
 * {
     box-sizing: border-box;
 }
-
+/*Properties for the html page*/
 html{
   font-size: 62.5%;
 }
-
+/*Properties for the body*/
 body{
   background-image: linear-gradient(
       rgba(187, 212, 224, 0.986) 50%,
       rgb(147, 174, 185) 100%);
 }
-
+/*Properties for the main*/
 main{
   max-width: 1600px;
   margin:auto;
 }
-
+/*Properties for the header, it is defined as flex*/
 header{
     display: flex;
     align-items: center;
@@ -27,40 +27,40 @@ header{
       rgb(5, 61, 87, 1) 100%
     );
 }
-
+/*Properties for the heading contained in the header*/
 header h1{
     font-size: 5rem;
     margin-left: 10px;
     background-color:rgb(36, 84, 100);
 }
-
+/*Properties for the navigation links area contained in the header*/
 header nav{
     font-size: 3rem;
     margin-left: auto;
     margin-right: 20px;
 }
-
+/*Properties for the list contained in the navigation links area of the header, defined as flex*/
 header nav ul{
     display: inline-flex;
     flex-wrap: wrap;
     list-style-type: none;
 
 }
-
+/*Properties for the list elements*/
 header nav ul li{
     margin-left: 25px;
     border-style: double;
     border-width: 0 0 5px 0;
     border-color: rgb(234, 236, 243);
 }
-
+/*Properties for the <a> tags contained in the navigation area of the header*/
 header a{
     color: rgb(224, 224, 233);
     text-decoration:none;
     font-weight: bold;
     font-family:'Lucida Console', 'Arial Narrow', Arial, sans-serif;
 }
-
+/*Properties for the sectionn that contains the personal photo*/
 .Photo{
     width: 100%;
     height: 400px;
@@ -70,12 +70,12 @@ header a{
     flex-wrap: wrap;
     align-items:center;
   }
-
+/*Properties for the personal photo*/
 .Photo img{
     height: 300px;
     margin-left:10%;
   }
-
+/*Properties for the heading in the personal photo section*/
 .Photo h2{
     color: white;
     font-size: 4rem;
@@ -84,13 +84,13 @@ header a{
     margin-top: 200px;
     background-color: rgb(9, 23, 148);
   }
-
+/*Properties for the About me section*/
 .About-me-section{
   display: inline-flex;
   justify-content: center;
   margin-right: 150px;
 }  
-
+/*Properties for the heading in the About me section*/
 .About-me-section h2{
   flex: 0 0 300px;
   font-size: 4rem;
@@ -102,20 +102,20 @@ header a{
   text-align: right;
   padding-right: 30px;
 }
-
+/*Properties for the paragraph contained in the About me section*/
 .About-me-section p{
   font-size: 2.5rem;
   text-align: justify;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   padding-left: 10px;
 }
-
+/*Properties for the Work section*/
 .Work-section{
   display: inline-flex;
   justify-content: center;
   margin-right: 150px;
 }
-
+/*Properties for the heading in the Work section*/
 .Work-section h2{
   margin-top:0px;
   margin-bottom: 0px;
@@ -129,14 +129,14 @@ header a{
   text-align: right;
   padding-right: 30px;
 }
-
+/*Properties for the Applications section*/
 .Applications{
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
   align-items: center;
 }
-
+/*Properties for the <a> tags contained in the Applications section*/
 .Applications a{
   margin:10px;
   flex-grow: 1;
@@ -146,25 +146,25 @@ header a{
   opacity: 0.5;
   transition: width 500ms;
 }
-
+/*Properties defined when hovering over the <a> tags in the Applications section*/
 .Applications a:hover{
   opacity:1;
 }
-
+/*Properties defined for the headings contained in the Applications section*/
 .Applications h3{
   font-size:2.5rem;
   color: white;
   margin-bottom: 0px;
   margin-left: 5px;
 }
-
+/*Properties defined for the paragraphs contained in the Applications section*/
 .Applications p{
   margin-top: 3px;
   margin-left: 5px;
   font-size:1.8rem;
   color:white;
 }
-
+/*Properties defined for the section contained in the Principal <a> tag*/
 .Principal section{
   position:relative;
   top:230px;
@@ -172,7 +172,7 @@ header a{
   background-color:rgb(29, 160, 160);
   margin-right: 60%;
 }
-
+/*Properties defined for the section contained in the Secondary <a> tag*/
 .Secondary section{
   position:relative;
   top:50%;
@@ -180,54 +180,54 @@ header a{
   background-color:rgb(29, 160, 160);
   margin-right: 40%;
 }
-
+/*Properties defined for the Principal <a> tag, here the background image is set*/
 .Principal{
   width:100%;
   height: 400px;
   background: url("../images/Application1.jpeg");
   background-size: cover;
 }
-
+/*No decoration for all the envelope <a> tags in the Applications section*/
 .Applications a{
   text-decoration:none;
 }
-
+/*Properties defined for the Application2 <a> tag, here the background image is set*/
 .Application2{
   background: url("../images/Application2.jpg");
   background-size:cover;
 }
-
+/*Properties defined for the Application3 <a> tag, here the background image is set*/
 .Application3{
   background: url("../images/Application3.jpg");
   background-size:cover;
 }
-
+/*Properties defined for the Application4 <a> tag, here the background image is set*/
 .Application4{
   background: url("../images/Application4.jpeg");
   background-size:cover;
 }
-
+/*Properties defined for the Application5 <a> tag, here the background image is set*/
 .Application5{
   background: url("../images/Application5.jpg");
   background-size:cover;
 }
-
+/*Establish a fix height for all the articles in Applications section*/
 .Applications article{
   height: 200px;
 }
-
+/*Establish a fix height and width limits for all the Secondary articles*/
 .Secondary{
   min-width:300px;
   max-width:450px;
   height:200px;
 }
-
+/*Properties for the Contact me section*/
 .Contact-me-section{
   display: flex;
   align-items:center;
   margin-right: 150px;
 }
-
+/*Properties for the heading contained in the Contact me section*/
 .Contact-me-section h2{
   flex: 0 0 300px;
   font-size: 4rem;
@@ -239,11 +239,11 @@ header a{
   text-align: right;
   padding-right: 30px;
 }
-
+/*Properties for the navigation area in the Contact me section*/
 .Contact-me-section nav{
   flex-basis:auto;
 }
-
+/*Properties for the list contained in the Contact me navigation area*/
 .Contact-me-section nav ul{
   display: inline-flex;
   flex-wrap:wrap;
@@ -251,7 +251,7 @@ header a{
   align-items:center;
   list-style-type: none;
 }
-
+/*Properties defined for all the <a> tags contained in the Contact me section*/
 .Contact-me-section a{
   color: black;
   font-size: 25px;
@@ -261,80 +261,85 @@ header a{
   text-align:center;
   font-family: "Bradley hand", cursive;
 }
-
+/*Properties for all the elements contained in the Contact me navigation area*/
 .Contact-me-section nav ul li{
   margin-left: 30px;
   flex-grow:1;
 }
-
+/*Define the display of an emoji before the cel link*/
 .Cel::before{
   content: "📱";
   display:inline-block;
   text-decoration: none;
 }
-
+/*Define the display of an emoji before the mail link*/
 .Mail::before{
   content: "📧";
   display:inline-block;
   text-decoration: none;
 }
-
+/*Define the display of an emoji before the github link*/
 .Github::before{
   content: "💻";
   display:inline-block;
   text-decoration: none;
 }
-
+/*Define the display of an emoji before the linkedin link*/
 .Linkedin::before{
   content: "💼";
   display:inline-block;
   text-decoration: none;
 }
-
+/*Change properties for larger screens*/
 @media screen and (min-width: 1473px){
+    /*Change width limits for a better visualization*/
     .Application2, .Application3, .Application4, .Application5{
       min-width:300px;
       max-width:347.33px;
     }
   }
-
+/*Change properties for medium screens*/
 @media screen and (max-width:1105px){
+    /*Change the justification of the Applications section*/
     .Applications{
       justify-content: center;
     }
-
+    /*Change the position of the Principal section*/
     .Principal section{
       margin-right: 50%;
     }
   }
-  
+/*Change properties for small screens*/
 @media screen and (max-width: 900px) {
+    /*Align the header heading to the center*/
     header h1{
       text-align:center;
     }
+    /*Change the direction of the flex to column for the header and list*/
     header, header nav ul {
       flex-direction: column;
     }
-
+    /*Align the list of the navigation area to the center*/
     header nav ul{
       text-align:center;
     }
+    /*Change position of the navigation area*/
     header nav {
         margin: auto;
       }
-
+    /*Change the direction of the flex to column for the Photo section*/
     .Photo{
         flex-direction: column;
     }
-
+    /*Change position of the heading in the Photo section*/
     .Photo h2{
         margin: auto;
     }
-
+    /*Change position of the Work section*/
     .Work-section{
       margin: auto;
     }
-
+    /*Change the size and style of the headings contained in the sections*/
     .Work-section h2, .About-me-section h2, .Contact-me-section h2{
       border-style:none;
       border-width:0px;
@@ -342,18 +347,18 @@ header a{
       flex-basis: 50px;
       margin-bottom:0px;
     }
-
+    /*Change the direction of the flex to column for all the sections*/
     .Applications, .Work-section, .About-me-section, .Contact-me-section {
       display:flex;
       flex-direction:column;
       align-items: center;
     }
-
+    /*Change position of the About me section*/
     .About-me-section{
       margin-right: 100px;
       margin-left:100px;
     }
-
+    /*Change the position and style of the paragraph in the About me section*/
     .About-me-section p{
       margin-top:0px;
       padding-top: 10px;
@@ -361,40 +366,40 @@ header a{
       border-width:10px 0 0 0;
       border-color: black;
     }
-   
+    /*Modify the border of the Applications section*/
     .Applications{
       border-style:double;
       border-width:10px 0 0 0;
       border-color: black;
     }
-
+    /*Change the position of all sections inside the Applications section*/
     .Applications section{
       margin-right: 40%;
     }
-
+    /*Modify the sizes of the Principal <a> tag*/
     .Principal {
       width: 400px;
       height: 300px;
     }
-
+    /*Change the position of the section inside Principal <a> tag*/
     .Principal section{
       top: 150px;
     }
-
+    /*Change the position of the section inside Secondary <a> tag*/
     .Secondary section{
       top:20%;
     }
-
+    /*Change the sizes of the <a> tags for Application2 to Application 5*/
     .Application2, .Application3, .Application4, .Application5{
       width: 400px;
       height: 150px;
     }
-
+    /*Modify the position for the Contact me section*/
     .Contact-me-section{
       margin-right: 100px;
       margin-left:100px;
     }
-
+    /*Modify the style and position of the Contact me navigation area*/
     .Contact-me-section nav{
       margin-top:0px;
       padding-top: 10px;
@@ -402,12 +407,12 @@ header a{
       border-width:10px 0 0 0;
       border-color: black;
     }
-
+    /*Change the direction of the flex to column for the list contained in the Contact me navigation area*/
     .Contact-me-section nav ul{
       flex-direction: column;
       padding-left:0px;
     }
-
+    /*Change the position of the list elements contained in the Contact me navigation area*/
     .Contact-me-section nav ul li{
       margin-left: 0px;
     }
