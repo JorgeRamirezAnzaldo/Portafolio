@@ -322,11 +322,24 @@ header a{
     /*Align the list of the navigation area to the center*/
     header nav ul{
       text-align:center;
+      padding-left:0px;
     }
     /*Change position of the navigation area*/
     header nav {
         margin: auto;
       }
+    /*Change position of the list elements and image*/
+    header nav ul li, .Photo img{
+      margin-left:0px;
+    }
+    /*Change size and alignment of the image inside Photo section*/
+    .Photo img{
+      margin-left:0px;
+    }
+    /*Change font size and alignment of the Photo section heading*/
+    .Photo h2{
+      margin-left:0px;
+    }
     /*Change the direction of the flex to column for the Photo section*/
     .Photo{
         flex-direction: column;
@@ -416,6 +429,122 @@ header a{
     .Contact-me-section nav ul li{
       margin-left: 0px;
     }
+
+    /*Change size of the <a> tags in the contact me section*/
+    .Contact-me-section a{
+      font-size: 2rem;
+    }
 }
+/*Change properties for smaller screens*/
+@media screen and (max-width:450px){
+  /*Change font size for principal heading and alignment*/
+  header h1{
+    font-size:3.5rem;
+    margin:auto;
+  }
+  /*Change font size for navigation area in header*/
+  header nav{
+    font-size:2.5rem;
+  }
+  /*Change Photo section height*/
+  .Photo{
+    height:500px;
+  }
+  /*Change heading of the Photo section*/
+  .Photo h2{
+    text-align:center;
+  }
+  /*Change position of the navigation area list*/
+  header nav ul{
+    padding-left:0px;
+  }
+  /*Change position of the list elements and image*/
+  header nav ul li, .Photo img{
+    margin-left:0px;
+  }
+  /*Change alignment of the headings of the sections*/
+  .About-me-section h2, .Contact-me-section h2{
+    text-align:center;
+  }
+  /*Change size and alignment of the sections*/
+  .About-me-section{
+    width:200px;
+    margin:auto;
+  }
+  /*Change font size of the About me section paragraph*/
+  .About-me-section p{
+    font-size: 2rem;
+  }
+  /*Change size of the images with applications*/
+  .Application2, .Application3, .Application4, .Application5{
+    width: 300px;
+    height: 150px;
+  }
+  /*Change size of the main image with application 1*/
+  .Principal{
+    width: 300px;
+  }
+  /*Change size and alignment of the Contact me section*/
+  .Contact-me-section{
+    width:300px;
+    margin:auto;
+  }
+  /*Change size of the navigation area in the Contact me section*/
+  .Contact-me-section nav{
+    height:150px;
+  }
+  /*Change size of the <a> tags in the contact me section*/
+  .Contact-me-section a{
+    font-size: 1.8rem;
+  }
 
-
+}
+/*Change properties for smallest screens*/
+@media screen and (max-width: 280px){
+  /*Change size of the Photo section*/
+  .Photo{
+    height:400px;
+  }
+  /*Change size and alignment of the image inside Photo section*/
+  .Photo img{
+    margin-left:0px;
+    width:180px;
+    height:250px;
+  }
+  /*Change font size and alignment of the Photo section heading*/
+  .Photo h2{
+    font-size:2.5rem;
+    margin-left:0px;
+  }
+  /*Change the font size of sections' headings*/
+  .Work-section h2, .About-me-section h2, .Contact-me-section h2{
+    font-size: 2.2rem;
+  }
+  /*Change font size of the About me section*/
+  .About-me-section p{
+    font-size: 1.5rem;
+  }
+  /*Change size of the secondary images*/
+  .Application2, .Application3, .Application4, .Application5{
+      width: 200px;
+      height: 150px;
+  }
+  /*Change size of the principal image*/
+  .Principal{
+      width: 200px;
+      height: 200px;
+  }
+  /*Change alignment and position of the section inside the main image*/
+  .Principal section{
+    top: 80px;
+    margin-right: 5px;
+  }
+  /*Change size of the Contact me section*/
+  .Contact-me-section{
+    width:200px;
+  }
+  /*Change size of the <a> tags in the contact me section*/
+  .Contact-me-section a{
+    font-size: 1.5rem;
+  }
+}
